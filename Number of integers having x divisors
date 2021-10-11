@@ -1,0 +1,24 @@
+#include <iostream.h>
+using namespace std;
+
+int main(){
+    int num,divisor,count1=0;
+    cout<<"enter the num"<<endl;
+    cin>>num;
+    cout<<"enter the divisor"<<endl;
+    cin>>divisor;
+    for(int i=0; i<=num; i++){
+        int count2=0;
+        for(int j=1; j<=i; j++){
+            if(i%j==0){
+               count2++;
+            }
+        }
+        if(count2==divisor){
+            cout<<i<<endl;
+            count1++;
+        }
+    }
+    cout<<"the above number have "<<count1<<" divisors";
+    return 0;
+}
